@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://robisplash_bg.png" type="Texture" id=1]
+[ext_resource path="res://robisplash_logo.png" type="Texture" id=2]
+[ext_resource path="res://robisplash_button.png" type="Texture" id=3]
+[ext_resource path="res://robisplash_button_pressed.png" type="Texture" id=4]
+[ext_resource path="res://freesans..fnt" type="BitmapFont" id=5]
+
+[node name="background" type="TextureFrame"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+texture = ExtResource( 1 )
+stretch_mode = 0
+
+[node name="logo" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 125.0
+margin/top = 18.0
+margin/right = 691.0
+margin/bottom = 393.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="start" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 327.0
+margin/top = 379.0
+margin/right = 476.0
+margin/bottom = 453.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+textures/pressed = ExtResource( 4 )
+
+[node name="copyright" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 678.0
+margin/top = 427.0
+margin/right = 793.0
+margin/bottom = 444.0
+custom_fonts/font = ExtResource( 5 )
+text = "(c) 1994 SEGO"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
